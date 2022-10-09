@@ -63,6 +63,13 @@ img{
     font-size: 30px;
     font-weight: bold;
 }
+.logo-page > h1:hover{
+    text-shadow: 1px 1px 10px  var(--celeste)
+}
+.iconPais{
+    width: 20px;
+    height: 20px;
+}
 .menu-item {
     list-style: none;
     display: inline-block;
@@ -115,7 +122,6 @@ img{
 }  
 #btn-menu:checked ~ .barra-menu{
     left: 0;
-    
 }
 .header-barra >  label :hover{
     filter: brightness(0) saturate(100%) invert(69%) sepia(30%) saturate(838%) hue-rotate(138deg) brightness(81%) contrast(97%);
@@ -144,13 +150,15 @@ img{
     height: 300px;  
     background: var(--oscuro);
     opacity: 0.7;
-    box-shadow: 1px 1px 10px 1px var(--sombra);
+    box-shadow: 1px 1px 1000px 1px var(--sombra);
     border-radius: 100%;
     border-bottom: 10px solid var(--blanco);
+
 }
+
 .header--image1{
     z-index: 11;
-    width: 200px;
+    width: 275px;
     height: 300px;
    /* border-bottom: 5px solid #34b0be;*/
 }
@@ -218,6 +226,7 @@ img{
     background-color:var(--oscuro);
     border-radius: 9px;
     height: 100px;
+    width: auto;
    /* margin: 1rem;*/
     box-shadow: 1px 1px 10px var(--sombra);
 }
@@ -247,6 +256,10 @@ img{
     font-size: var(--subtitulo);
     color: var(--celeste);
     margin-bottom: 1rem;
+}
+.section-about >p{
+    text-align: justify;
+    line-height: 30px;
 }
 
 /* SERVICIOS */
@@ -488,11 +501,12 @@ footer > p{
     font-size: 16px;
     color: var(--gris);
     text-shadow: 1px 1px 10px black;
+    padding: 1rem;
 }
 
-
-
-
+#id_logo:hover{
+    filter: invert(62%) sepia(48%) saturate(587%) hue-rotate(138deg) brightness(89%) contrast(87%);
+}
 @media screen and (min-width: 600px ) {
 
         /* TRABAJOS */
@@ -765,7 +779,7 @@ footer > p{
         height: 450px; 
     }
     .header--image1{
-        width: 275px;
+        width: 375px;
         height: 400px;
     }
     
